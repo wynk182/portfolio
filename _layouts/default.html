@@ -4,15 +4,19 @@
 			<meta name="viewport" content="width=device-width, initial-scale=1">
 			<title>{{ page.title }}</title>
 			<!-- link to main stylesheet -->
-			<link rel="stylesheet" type="text/css" href="/portfolio/css/beauter.min.css">
-			<script src="/portfolio/js/beauter.min.js"></script>
+			<link rel="stylesheet" type="text/css" href="/css/beauter.min.css">
+            <script src="/js/fontawesome-all.min.js"></script>
+
 		</head>
 		<body>
 			<ul class="topnav" id="myTopnav2">
-  				<li><a href="#" class="brand"></a></li>
-  				<li><a href="#" class="active">Active</a></li>
-				<li><a href="#">Link</a></li>
-  				<li style="float:right;"><a href="#" >Right</a></li>
+  				<li></li>
+  				<li><a href="#" class="active"><i class="fas fa-home"></i></a></li>
+                <li><a href="#">Code <i class="fas fa-code"></i></a></li>
+
+                <li><a href="#">About <i class="fas fa-user-tie"></i></a></li>
+                <li><a href="#">CV <i class="fas fa-file-pdf"></i></a></li>
+                <li><a href="#">Links <i class="fas fa-link"></i></a></li>
   				<li class="-icon">
     					<a href="javascript:void(0);" onclick="topnav('myTopnav2')">☰</a>
   				</li>
@@ -22,10 +26,14 @@
 			{{ content }}		
 			
 			<footer>
-	    		<ul>
-	        		<li><a href="mailto:wynk182@gmail.com">email</a></li>
-	        		<li><a href="https://github.com/wynk182">github.com/wynk182</a></li>
-				</ul>
+	    		<div class="jumbo _dark">
+                    <a href="mailto:wynk182@gmail.com" style="text-decoration: none;">Email</a> |
+	        		<a href="https://github.com/wynk182" style="text-decoration: none;">Github</a>
+                </div>
+	        		
+				
 			</footer>
 		</body>
+        <script src="/js/beauter.min.js"></script>
+
 	</html>
