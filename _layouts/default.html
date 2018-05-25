@@ -9,8 +9,8 @@
 
 		</head>
 		<body>
-			<ul class="topnav" id="myTopnav2">
-  				
+			<ul class="topnav -fixed" id="myTopnav2">
+
   				<li><a href="index" class="brand"><i class="fas fa-home"></i></a></li>
                 <li><a href="code">Code</a></li>
 
@@ -21,25 +21,28 @@
     					<a href="javascript:void(0);" onclick="topnav('myTopnav2')">☰</a>
   				</li>
 
-			</ul>	
-		
-			{{ content }}		
-			
-		
-	       <div class="jumbo _dark footer" style="padding:1em;">
-               <a href="mailto:wynk182@gmail.com" style="text-decoration: none;">Email</a> |
-               <a href="https://github.com/wynk182" target="_blank" style="text-decoration: none;">Github</a>
-            </div>
-	        		
+			</ul><br/><br/>
+
+			{{ content }}
+
+	       <div class="jumbo _dark footer">
+
+					 <div class="_floatLeft">© 2018 Michael Wynkoop.
+						 <a href="mailto:wynk182@gmail.com" style="text-decoration: none;">Email</a> |
+						 <a href="https://github.com/wynk182" target="_blank" style="text-decoration: none;">Github</a>
+					 </div>
+          </div>
+
 		</body>
         <script src="js/beauter.min.js"></script>
         <style>
             .footer {
+								padding:1em;
                 position: fixed;
                 left: 0;
                 bottom: 0;
                 width: 100%;
-                
+								font-size: 12px;
             }
         </style>
 
