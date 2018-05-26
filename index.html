@@ -3,21 +3,57 @@ layout: default
 title: Michael Wynkoop Portfolio
 ---
 <br/>
-<div class="jumbo _dark">
-    <div class="row container">
-        <div class="col m3"><i class="fas fa-gem fa-4x"></i><br/>Web Applications</div>
-    <div class="col m3"><i class="fas fa-rocket fa-4x"></i><br/>Native Applications</div>
-	       <div class="col m3"><i class="fas fa-cogs fa-4x"></i><br/>Web APIs</div>
-            <div class="col m3"><i class="fas fa-chess-rook fa-4x"></i><br/>Entertainment</div>
+<div class="jumbo _dark" id="opener">
+    <div class="row container" id="snip">
+        <div class="col m3">
+            <div class="my_accordion">
+                <i class="fas fa-gem fa-4x"></i><br/>Web Applications
+            </div>
+            <div class="-panel _dark">
+                <p>
+                    Full-Stack development of SaaS applications for enterprise customers. Ruby on Rails, C# ASP .NET, and Play/Java.
+                </p>
+            </div>
         </div>
-        <br/><br/><br/>
-        <div class="row container _alignLeft">
-            <h2>Welcome</h2>
-            <p>Please take a look around. I am a Software Developer in Los Angeles California and I love creating new and exciting applications!</p>
+        <div class="col m3">
+            <div class="my_accordion">
+                <i class="fas fa-rocket fa-4x"></i><br/>Native Applications
+            </div>
+            <div class="-panel _dark">
+                <p>
+                    C# windows services and forms, Java Server side daemons, and Java Android apps. Some games some business.
+                </p>
+            </div>
         </div>
-
+        <div class="col m3">
+            <div class="my_accordion">
+                <i class="fas fa-cogs fa-4x"></i><br/>Web APIs
+            </div> 
+            <div class="-panel _dark">
+                <p>
+                    Secure oAuthable Json and Xml web APIs. Usually built with Ruby on Rails to ensure flexibility and scaleability.
+                </p>
+            </div>
+        </div>
+        <div class="col m3">
+            <div class="my_accordion">
+                <i class="fas fa-chess-rook fa-4x"></i><br/>Entertainment
+            </div>
+            <div class="-panel _dark">
+                <p>
+                    In my free time i develop fun and silly arcade syle games. I am currently working on a retro RPG in Java.
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    <br/><br/><br/>
+    <div class="row container _alignLeft">
+        <h2>Hello</h2>
+        <p>Please take a look around. I am a Software Developer in Los Angeles California and I love creating new and exciting applications! I specialize in full stack SaaS web applications.</p>
+    </div><br/>
 </div>
-<div class="jumbo _primary header_bar" id="web_applications"></div>
+<div class="jumbo _primary header_bar" id="web_applications">WORK</div>
 <div class="container" >
     <div class="row">
         <div class="col m6">
@@ -62,5 +98,31 @@ title: Michael Wynkoop Portfolio
     }
     .header_bar{
         padding:1em;
+        margin-bottom: 2em;
     }
 </style>
+<script>
+var anchor = document.getElementById('snip');
+var accr = document.getElementsByClassName("my_accordion");
+anchor.onclick = function (e){
+    var j;
+    for (j = 0; j < accr.length; j++) {
+        accr[j].classList.toggle("active");
+        var panel = accr[j].nextElementSibling;
+        if (panel.style.maxHeight){
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        }
+    }
+};    
+function resize(){
+    var heights = window.innerHeight;
+    if(window.innerWidth > 600)
+        document.getElementById("opener").style.height = heights + "px";
+}
+resize();
+window.onresize = function() {
+    resize();
+};
+</script>
