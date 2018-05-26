@@ -2,22 +2,37 @@
 layout: default
 title: Michael Wynkoop Portfolio
 ---
+<br/>
 <div class="jumbo _dark">
     <div class="row container">
-        <div class="col m3"><a class="head_icon" href="#web_applications"><i class="fas fa-gem fa-2x"></i><br/>Web Applications</a></div>
-    <div class="col m3"><a class="head_icon" href="#native_apps"><i class="fas fa-rocket fa-2x"></i><br/>Native Applications</a></div>
-	       <div class="col m3"><a class="head_icon" href="#apis"><i class="fas fa-cogs fa-2x"></i><br/>Web APIs</a></div>
-            <div class="col m3"><a class="head_icon" href="#arcade"><i class="fas fa-chess-rook fa-2x"></i><br/>Arcade</a></div>
+        <div class="col m3"><i class="fas fa-gem fa-4x"></i><br/>Web Applications</div>
+    <div class="col m3"><i class="fas fa-rocket fa-4x"></i><br/>Native Applications</div>
+	       <div class="col m3"><i class="fas fa-cogs fa-4x"></i><br/>Web APIs</div>
+            <div class="col m3"><i class="fas fa-chess-rook fa-4x"></i><br/>Entertainment</div>
         </div>
-        <br/><br/>
+        <br/><br/><br/>
         <div class="row container _alignLeft">
-            <h4>Welcome</h4>
+            <h2>Welcome</h2>
             <p>Please take a look around. I am a Software Developer in Los Angeles California and I love creating new and exciting applications!</p>
         </div>
 
 </div>
-
-<div class="container" id="web_applications">
+<div class="jumbo _primary header_bar" id="web_applications"></div>
+<div class="container" >
+    <div class="row">
+        <div class="col m6">
+            <h3><a style="text-decoration:none;" href="https://mossbee.com">"Mossbee"</a></h3>
+            <p>
+                A mobile ordering solution for small businesses built with ruby on rails. Pay as you go business model with text to order functionality. Vendors upload menus/items from a square account and their customers can view the menu by sending a text to the corresponding phone number. Text messaging is handled through Twilio api and payment processing is handled through Square api.
+            </p>
+        </div>
+        <div class="_alignCenter col m6">
+            <div class="row">
+                <img src="images/mossbee_home.png"></img>
+                <img src="images/mossbee_dashboard.png"></img>
+            </div>
+        </div>
+    </div>
     <div class="row">
         <div class="col m6">
             <h3><a style="text-decoration:none;" href="https://github.com/wynk182/CorkBoard">"Cork"</a></h3>
@@ -27,56 +42,15 @@ title: Michael Wynkoop Portfolio
         </div>
         <div class="_alignCenter col m6">
             <div class="row">
-                
                 <img src="images/cork_screen_shot.png"></img>
-
                 <img src="images/your_posts_cork.png"></img>
-                
             </div>
-            <!--<div class="row">
-                <img src="images/cork_post.png"></img>
-
-                <img src="images/cork_contact.png"></img>
-
-            </div>-->
-
-
-        </div>
-    </div>
-    <div class="row">
-        <div class="col m6">
-
-        </div>
-        <div class="col m6">
-
         </div>
     </div>
 
 </div>
-<div class="container" id="native_apps">
-    <div class="col m6">
+<br/><br/>
 
-    </div>
-    <div class="col m6">
-
-    </div>
-</div>
-<div class="container" id="apis">
-    <div class="col m6">
-
-    </div>
-    <div class="col m6">
-
-    </div>
-</div>
-<div class="container" id="arcade">
-    <div class="col m6">
-
-    </div>
-    <div class="col m6">
-
-    </div>
-</div>
 <style>
     .head_icon{
         text-decoration: none;
@@ -85,5 +59,8 @@ title: Michael Wynkoop Portfolio
     img{
         padding:.5em;
         width:48%;
+    }
+    .header_bar{
+        padding:1em;
     }
 </style>
