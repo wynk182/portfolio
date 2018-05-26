@@ -3,7 +3,7 @@ layout: default
 title: Michael Wynkoop Portfolio
 ---
 <br/>	
-<div class="col-container">
+<div class="col-container" id="main">
     <div class="column" style="background-image: url('images/me.jpg');background-size: cover;">
         <br/>
         <!--<img src="images/michael_dev.jpeg" id="me"></img>-->
@@ -39,4 +39,15 @@ title: Michael Wynkoop Portfolio
         }
     }
 </style>
+<script>
+    function resize(){
+    var heights = window.innerHeight;
+    if(window.innerWidth > 600)
+        document.getElementById("main").style.height = heights + "px";
+}
+resize();
+window.onresize = function() {
+    resize();
+};
+</script>
 
