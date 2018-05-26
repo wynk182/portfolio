@@ -102,9 +102,9 @@ title: Michael Wynkoop Portfolio
     }
 </style>
 <script>
-var anchor = document.getElementById('snip');
-var accr = document.getElementsByClassName("my_accordion");
-anchor.addEventListener = function (e){
+    var accr = $('.my_accordion');
+$('#snip').click(function(){
+    
     var j;
     for (j = 0; j < accr.length; j++) {
         accr[j].classList.toggle("active");
@@ -114,8 +114,9 @@ anchor.addEventListener = function (e){
         } else {
           panel.style.maxHeight = panel.scrollHeight + "px";
         }
+      
     }
-};    
+});   
 function resize(){
     var heights = window.innerHeight;
     if(window.innerWidth > 600)
