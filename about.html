@@ -2,8 +2,41 @@
 layout: default
 title: Michael Wynkoop Portfolio
 ---
-<div class="blurb">
-	<div class="jumbo _cream">
-	about
-	</div>	
-</div><!-- /.blurb -->
+<br/>	
+<div class="col-container">
+    <div class="column" style="background-image: url('images/me.jpg');background-size: cover;">
+        <br/>
+        <!--<img src="images/michael_dev.jpeg" id="me"></img>-->
+    </div>
+    <div class="column _nightblue">
+        <div id="info" class="_nightblue _alignLeft">
+            <h1>Michael Wynkoop</h1>
+            <p>
+                I am an expirienced developer whos has developed products for enterprise clients such as Target, Burlington Coat Factory, Dollarama, United Airlines, and many other companies. I specialize in content management solutions and data analytics as well as realtime operations management.
+            </p>
+        </div>
+    </div>               
+</div>
+<div class="jumbo"><h1>100</h1></div>
+<style>
+    #info{
+        padding:2em;
+    }
+    .col-container {
+        display: table; /* Make the container element behave like a table */
+        width: 100%; /* Set full-width to expand the whole page */
+    }
+    .column {
+        width:50%;
+        height: 400px;
+        display: table-cell; /* Make elements inside the container behave like table cells */
+        padding: 0px;
+    }
+    @media only screen and (max-width: 600px) {
+        .column { 
+            display: block;
+            width: 100%;
+        }
+    }
+</style>
+
