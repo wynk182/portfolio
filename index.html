@@ -50,7 +50,7 @@ title: Michael Wynkoop Portfolio
     <br/><br/><br/>
     <div class="row container _alignLeft">
         <h2>Hello</h2>
-        <p>Please take a look around. I am a Software Developer in Los Angeles California and I love creating new and exciting applications! I specialize in full stack SaaS web applications.</p>
+        <p>Please take a look around. I am a Software Developer in Los Angeles California and I love creating new and exciting applications! I specialize in full stack SaaS web applications. Lets build something!</p>
         <a href="contact" class="button">Contact Me</a>
     </div><br/>
 </div>
@@ -65,8 +65,8 @@ title: Michael Wynkoop Portfolio
         </div>
         <div class="_alignCenter col m6">
             <div class="row">
-                <img src="images/mossbee_home.png"></img>
-                <img src="images/mossbee_dashboard.png"></img>
+                <img src="images/mossbee_home.png" id="mb_1" onclick="openimg('mb_1','imgb')"></img>
+                <img src="images/mossbee_dashboard.png" id="mb_2" onclick="openimg('mb_2','imgb')"></img>
             </div>
         </div>
     </div>
@@ -79,14 +79,19 @@ title: Michael Wynkoop Portfolio
         </div>
         <div class="_alignCenter col m6">
             <div class="row">
-                <img src="images/cork_screen_shot.png"></img>
-                <img src="images/your_posts_cork.png"></img>
+                <img src="images/cork_screen_shot.png" id="cr_1" onclick="openimg('cr_1','imgb')"></img>
+                <img src="images/your_posts_cork.png" id="cr_2" onclick="openimg('cr_2','imgb')"></img>
             </div>
         </div>
     </div>
 
 </div>
 <br/><br/>
+<div id="imgb" class="modal">
+  <span class="-close">✖</span>
+  <img class="modal-content">
+  <div class="caption"></div>
+</div>
 
 <style>
     .button{
