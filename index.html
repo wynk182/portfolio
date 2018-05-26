@@ -102,9 +102,9 @@ title: Michael Wynkoop Portfolio
     }
 </style>
 <script>
-    var accr = $('.my_accordion');
-$('#snip').click(function(){
     
+$('#snip').on('click', function(){
+    var accr = $('.my_accordion');
     var j;
     for (j = 0; j < accr.length; j++) {
         accr[j].classList.toggle("active");
