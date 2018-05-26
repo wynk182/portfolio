@@ -104,7 +104,7 @@ title: Michael Wynkoop Portfolio
 <script>
 var anchor = document.getElementById('snip');
 var accr = document.getElementsByClassName("my_accordion");
-anchor.onclick = function (e){
+anchor.addEventListener = function (e){
     var j;
     for (j = 0; j < accr.length; j++) {
         accr[j].classList.toggle("active");
