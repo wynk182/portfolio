@@ -7,15 +7,32 @@ title: Michael Wynkoop Portfolio
 <div class="container form_box _cream">
     <h3>Contact me</h3>
     <form id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLScm6Lu-Vela4Odnh_xBsirT7bmElBh9jA-2YWnu2PrApY22kw/formResponse" target="hidden_iframe" onsubmit="submitted=true;">
-        <label>Name</label>
-        <input type="text" name="entry.1618786886">
-        <label>Email</label>
-        <input type="text" name="entry.2038511369">
-        <label>Subject</label>
-        <input type="text" name="entry.1691683055">
-        <label>Message</label>
-        <textarea type="text" rows="4" style="width:100%;" name="entry.80450848"></textarea>
-        <button type="submit" class="_primary">Send</button>
+        <div class="row">
+            <div class="col m6">
+                <label>Name*</label>
+                <input type="text" name="entry.1618786886">
+            </div>
+            <div class="col m6">
+                <label>Company*</label>
+                <input type="text" name="entry.407928826">
+            </div>
+        </div>
+        <div class="row">
+        <div class="col m6">
+                <label>Email*</label>
+                <input type="text" name="entry.2038511369">
+            </div>
+            <div class="col m6">
+                <label>Phone*</label>
+                <input type="tel" name="entry.403230887">
+            </div>
+        </div>
+        <div class="row" style="padding: 1em;"> 
+            <label>Message*</label>
+            <textarea type="text" rows="4" style="width:100%;" name="entry.80450848"></textarea>
+            <button type="submit" class="_primary">Send</button>
+        </div>  
+        
     </form>
     <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
 </div>
