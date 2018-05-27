@@ -140,8 +140,7 @@ $('#snip').on('click', function(){
 });   
 function resize(){
     var heights = window.innerHeight;
-    if(window.innerWidth > 600)
-        document.getElementById("opener").style.height = heights + "px";
+    document.getElementById("opener").style.height = heights + "px";
 }
 resize();
 window.onresize = function() {
