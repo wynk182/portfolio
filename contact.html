@@ -4,7 +4,9 @@ background: images/carl-heyerdahl-181868-unsplash.jpg
 title: Michael Wynkoop Portfolio
 ---
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script>var submitted=false;</script>
+<script>
+var submitted=false;
+</script>
 <br/><br/>
 
 <div class="container" id="main">
@@ -17,7 +19,7 @@ title: Michael Wynkoop Portfolio
         <p>Leave your contact information.</p>
         <div class="row">
              <label>Message or Request</label>
-            <textarea type="text" rows="4" style="width:100%;" name="entry.80450848">Hey, lets talk about a project.</textarea>
+            <textarea type="text" rows="4" style="width:100%;" name="entry.80450848">Hey, let's talk.</textarea>
             <label>Name</label>
             <input type="text" name="entry.1618786886">
         </div>
@@ -34,29 +36,22 @@ title: Michael Wynkoop Portfolio
     <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
 </div>
 <br/><br/><br/>
-<div id="sn2" class="snackbar _primary _box _shadow">
-  Thanks, I'll get back to you as soon as possible!
-</div>
-<script type="text/javascript">
+<script>
+//if($( window ).width() > 800){
+//    //alert('it is');
+//    $('form').css({'float': 'right', 'width': '35%'});
+//}     
 $('#gform').on('submit', function(e) {
     $('#gform').fadeOut(1000, function(){$('.alert').fadeIn();});
-    //$('#main *').hide();
-    //$('#main *').fadeOut(2000, function(){
-       //$('.alert').removeClass('_hidden'); 
-        
-    //});
-    //$('.alert').fadeIn(2000);
-  //$('#main *').fadeOut(2000, showsnackbar('sn2'));
-    //$('#gform').prepend('Your submission has been processed...');
 });
-
-if($( window ).width() > 800){
-    //alert('it is');
-    $('form').css({'float': 'right', 'width': '35%'});
-}   
 </script>
 <style>
-    
+    @media only screen and (min-width: 800px) {
+        form { 
+            float: right;
+            width: 35%;
+        }
+    }
     form{
         color: white;
         background-color: darkslategray;
