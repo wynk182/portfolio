@@ -7,7 +7,7 @@
 			<link rel="stylesheet" type="text/css" href="css/beauter.min.css">
             <script src="js/fontawesome-all.min.js"></script>
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
+            <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
 		</head>
 		<body class="{{ page.style }}" style="background-image: url('{{page.background}}') !important;">
 			<ul class="topnav -fixed" id="myTopnav2">
@@ -34,9 +34,9 @@
                     © 2018 Michael Wynkoop.
 				</div>
                 <div class="_floatRight">
-                    <a href="mailto:wynk182@gmail.com" style="text-decoration: none;">Email</a> |
-				    <a href="https://github.com/wynk182" target="_blank" style="text-decoration:none;">Github</a> |
-                    <a href="https://www.linkedin.com/in/michael-wynkoop-65a93281" style="text-decoration:none;">LinkedIn</a>   
+                    <a href="mailto:wynk182@gmail.com" class="link"><i class="fas fa-envelope"></i></a> 
+				    <a href="https://github.com/wynk182" target="_blank" class="link"><i class="fab fa-github"></i></a> 
+                    <a href="https://www.linkedin.com/in/michael-wynkoop-65a93281" class="link"><i class="fab fa-linkedin-in"></i></a>   
                 </div>
             </div>	 
                
@@ -45,13 +45,20 @@
 		</body>
         <script src="js/beauter.min.js"></script>
         <style>
+            body{
+                font-family: 'Fira Sans', sans-serif;
+            }
+            .link{
+                padding: .5em;
+                text-decoration: none;
+            }
             .footer {
 				padding:1em;
                 position: fixed;
                 left: 0;
                 bottom: 0;
                 width: 100%;
-				font-size: 12px;
+				font-size: 14px;
             }
         </style>
 
