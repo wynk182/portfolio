@@ -16,7 +16,6 @@ var submitted=false;
     </div>
     <form id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLScm6Lu-Vela4Odnh_xBsirT7bmElBh9jA-2YWnu2PrApY22kw/formResponse" target="hidden_iframe" onsubmit="submitted=true;">
         <h3>Lets Collaborate!</h3>
-        <p>Leave your contact information.</p>
         <div class="row">
              <label>Message or Request</label>
             <textarea type="text" rows="4" style="width:100%;" name="entry.80450848">Hey, let's talk.</textarea>
@@ -36,14 +35,15 @@ var submitted=false;
     <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
 </div>
 <br/><br/><br/>
-<script>
-//if($( window ).width() > 800){
-//    //alert('it is');
-//    $('form').css({'float': 'right', 'width': '35%'});
-//}     
+<script> 
 $('#gform').on('submit', function(e) {
     $('#gform').fadeOut(1000, function(){$('.alert').fadeIn();});
 });
+function resize(){
+    var heights = window.innerHeight -90;
+    document.getElementById("main").style.height = heights + "px";
+}
+resize();
 </script>
 <style>
     @media only screen and (min-width: 800px) {
