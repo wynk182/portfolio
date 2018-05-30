@@ -3,11 +3,16 @@ layout: default
 title: Michael Wynkoop Portfolio
 ---
 <br/>
+
 <div class="jumbo _cream" id="opener" style="background-image: url('images/matthaeus-39967-unsplash.jpg');background-size: cover;">
+    <div class="alert _primary _shadow _box" style="display: none;">
+        <span class="-close"><i class="fas fa-times-circle"></i></span>
+        <strong>Thanks!</strong> I will get back to you as soon as possible! 
+    </div>
     <div class="row container _alignLeft">
         <h2 style="font-size: 50px;">Michael Wynkoop</h2>
-        <p>Please take a look around. I am a Software Developer in Los Angeles California. I love creating new and exciting applications. I specialize in full stack SaaS web applications.Lets build something!</p>
-        <a href="contact" class="button">Contact Me</a>
+        <p>Please take a look around. I am a Software Developer in Los Angeles California. I love creating new and exciting applications. I specialize in full stack mobile friendly SaaS web applications.Lets build something!</p>
+        <a href="#" onclick="return openmodal('contact_form')" class="button">Contact Me</a>
     </div><br/>
 </div>
 
@@ -108,7 +113,30 @@ title: Michael Wynkoop Portfolio
   <img class="modal-content">
   <div class="caption"></div>
 </div>
-
+<div id="contact_form" class="modalbox-modal ">
+    <div class="modalbox-modal-content">
+        <span class="-close" id="modalbox-close">✖</span>
+        <form id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLScm6Lu-Vela4Odnh_xBsirT7bmElBh9jA-2YWnu2PrApY22kw/formResponse" target="hidden_iframe" onsubmit="submitted=true;">
+        <h3>Lets Collaborate!</h3>
+        <div class="row">
+             <label>Message or Request</label>
+            <textarea type="text" rows="4" style="width:100%;" name="entry.80450848">Hey, let's talk.</textarea>
+            <label>Name</label>
+            <input type="text" name="entry.1618786886">
+        </div>
+        <div class="row">
+            <label>Email or Phone</label>
+            <input type="text" name="entry.2038511369">
+            
+        </div>
+        <div class="row"> 
+            <button type="submit" class="_primary">Send</button>
+        </div>  
+        
+    </form>
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+    </div>
+</div>
 <style>
     .head_icon{
         text-decoration: none;
@@ -122,8 +150,29 @@ title: Michael Wynkoop Portfolio
         padding:1em;
         margin-bottom: 2em;
     }
+    @media only screen and (min-width: 800px) {
+        .modalbox-modal-content { 
+            
+            width: 35%;
+        }
+    }
+    .modalbox-modal-content{
+        color: white;
+        background-color: darkslategray;
+        padding: 2em;
+        border-radius:5px;
+    }
+    input{
+        width:100%;
+    }
 </style>
 <script>
+$('#gform').on('submit', function(e) {
+    $('#contact_form').css('display', 'none');
+    //$('#gform').fadeOut(1000, function(){$('.alert').fadeIn();});
+    //$('#modal-box').close();
+    $('.alert').fadeIn();
+});
 $('#snip').on('click', function(){
     var accr = $('.my_accordion');
     var j;
