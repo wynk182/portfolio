@@ -5,11 +5,12 @@ title: Michael Wynkoop Portfolio
 <br/>
 <div class="jumbo _cream" id="opener" style="background-image: url('images/matthaeus-39967-unsplash.jpg');background-size: cover;">
     <div class="row container _alignLeft">
-        <h2 style="font-size: 50px;">Hello,</h2>
-        <p>Please take a look around. I am a Software Developer in Los Angeles California and I'm damn good at it. I love creating new and exciting applications. I specialize in full stack SaaS web applications.Lets build something!</p>
+        <h2 style="font-size: 50px;">Michael Wynkoop</h2>
+        <p>Please take a look around. I am a Software Developer in Los Angeles California. I love creating new and exciting applications. I specialize in full stack SaaS web applications.Lets build something!</p>
         <a href="contact" class="button">Contact Me</a>
     </div><br/>
 </div>
+
 <div class="jumbo _primary header_bar" id="web_applications">WORK</div>
 <div class="container" >
     <div class="row">
@@ -123,7 +124,6 @@ title: Michael Wynkoop Portfolio
     }
 </style>
 <script>
-    
 $('#snip').on('click', function(){
     var accr = $('.my_accordion');
     var j;
@@ -141,6 +141,8 @@ $('#snip').on('click', function(){
 function resize(){
     var heights = window.innerHeight -90;
     document.getElementById("opener").style.height = heights + "px";
+    //if(window.innerWidth > 600)
+        //document.getElementById("about").style.height = heights + "px";
 }
 resize();
 //window.onresize = function() {

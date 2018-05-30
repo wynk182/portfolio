@@ -1,0 +1,41 @@
+---
+layout: default
+title: Michael Wynkoop Portfolio
+---
+<meta charset="UTF-8" />
+<title>Hello World</title>
+<script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+<br/><br/>
+<div class="container">
+    <div id="root"></div>
+</div>
+
+<!--
+  Note: this page is a great way to try React but it's not suitable for production.
+  It slowly compiles JSX with Babel in the browser and uses a large development build of React.
+
+  To set up a production-ready React build environment, follow these instructions:
+  * https://reactjs.org/docs/add-react-to-a-new-app.html
+  * https://reactjs.org/docs/add-react-to-an-existing-app.html
+
+  You can also use React without JSX, in which case you can remove Babel:
+  * https://reactjs.org/docs/react-without-jsx.html
+  * https://reactjs.org/docs/cdn-links.html
+-->
+      
+<script>
+class Grid extends React.Component {
+    render() {
+        return React.createElement('button', {onclick: alert('go')}, `Hello ${this.props.toWhat}`);
+    }
+}
+ReactDOM.render(
+    React.createElement(Grid, {toWhat: 'World'}, null),
+    document.getElementById('root')
+);
+    
+</script>
+<style>
+    
+</style>
