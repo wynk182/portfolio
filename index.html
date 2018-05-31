@@ -11,7 +11,7 @@ title: Michael Wynkoop Portfolio
     </div>
     <div class="row container _alignLeft">
         <h2 style="font-size: 50px;">Michael Wynkoop</h2>
-        <p>Please take a look around. I am a Software Developer in Los Angeles California. I love creating new and exciting applications. I specialize in full stack mobile friendly SaaS web applications.Lets build something!</p>
+        <p>I am a Software Developer in Los Angeles California and I specialize in full stack, mobile friendly, SaaS web applications. Lets build something!</p>
         <a href="#" onclick="return openmodal('contact_form')" class="button">Contact Me</a>
     </div><br/>
 </div>
@@ -22,7 +22,7 @@ title: Michael Wynkoop Portfolio
         <div class="col m6">
             <h3><a style="text-decoration:none;" href="https://www.lavi.com/en/queue-management">"Qtrac"</a></h3>
             <p>
-                As a developer at Lavi Industries I have worked on legacy SaaS applications such as QtracVR and QtracCF. Also on a team of three started and continue to maintain the QtracIQ full stack web application. We use tools such as Scala/Java, Play framework, Git, MySQL and MongoDB. I consider myself a subject matter expert on all software applications In the Qtrac Department of Lavi Industries. Qtrac CF is a plug and play Java application using the Home automation technology ZWave. I implemented a light weight socket server to accept and respond to http posts from POS software as an alternative. This IOT application is now used at thousands of retail stores worldwide.
+                As a developer at Lavi Industries I have worked on legacy SaaS applications such as QtracVR and QtracCF. Also on a team of three started and continue to maintain the QtracIQ full stack web application. We use tools such as Scala/Java, Play framework, Git, MySQL and MongoDB. I consider myself a subject matter expert on all software applications In the Qtrac Department of Lavi Industries. Qtrac CF is a plug and play Java application using the Home automation technology ZWave. I am lead developer on all innovation, feature requests and maintenance for this application. This IOT application is currently used at thousands of retail locations worldwide.
             </p>
         </div>
         <div class="_alignCenter col m6">
@@ -36,7 +36,7 @@ title: Michael Wynkoop Portfolio
         <div class="col m6">
             <h3><a style="text-decoration:none;" href="https://mossbee.com">"Mossbee"</a></h3>
             <p>
-                A mobile ordering solution for small businesses built with ruby on rails. Pay as you go business model with text to order functionality. Vendors upload menus/items from a square account and their customers can view the menu by sending a text to the corresponding phone number. Text messaging is handled through Twilio api and payment processing is handled through Square api.
+                A full stack mobile ordering solution for small businesses built with ruby on rails. Pay as you go business model with text to order functionality. Vendors upload menus/items from a square account and their customers can view the menu by sending a text to the corresponding phone number. Text messaging is handled through Twilio api and payment processing is handled through Square ecommerce api.
             </p>
         </div>
         <div class="_alignCenter col m6">
@@ -50,7 +50,7 @@ title: Michael Wynkoop Portfolio
         <div class="col m6">
             <h3><a style="text-decoration:none;" href="https://github.com/wynk182/CorkBoard">"Cork"</a></h3>
             <p>
-                A virtual bulletin board web app built with ruby on rails. Cork incorporates a blog style posting and commenting mechanism on a fun cork board styled platform. Users can create content anonymously or after creating an account. All posts are verified by board owners or SA depending on permissions before displayed. All boards start un-owned until they are claimed and google embeding api is used to display a local location for boards with addresses. Users can recieve replies to their post via the web application, email, or text messaging based on their contact information.
+                A virtual bulletin board full stack web app built with ruby on rails. Cork incorporates blog style posting and commenting on a fun cork board styled platform. Users can create content anonymously or after creating an account. All posts are verified by board owners or administrators depending on permissions before displayed. All boards start un-owned until they are claimed and google embeding api is used to display a local location for boards with addresses. Users can recieve replies to their post via the web application, email, or text messaging based on their contact information.
             </p>
         </div>
         <div class="_alignCenter col m6">
@@ -80,7 +80,7 @@ title: Michael Wynkoop Portfolio
             </div>
             <div class="-panel _dark">
                 <p>
-                    C# windows services and forms, Java Server side daemons, and Java Android apps. Some games some business.
+                    C# windows services and forms, Java Server side daemons, Electron.js desktop apps. Some games some business.
                 </p>
             </div>
         </div>
@@ -90,7 +90,7 @@ title: Michael Wynkoop Portfolio
             </div> 
             <div class="-panel _dark">
                 <p>
-                    Secure oAuthable Json and Xml web APIs. Usually built with Ruby on Rails to ensure flexibility and scaleability.
+                    Secure OAuthable Json and Xml web APIs. Usually built with Ruby on Rails to ensure flexibility and scaleability.
                 </p>
             </div>
         </div>
@@ -100,7 +100,7 @@ title: Michael Wynkoop Portfolio
             </div>
             <div class="-panel _dark">
                 <p>
-                    In my free time i develop fun and silly arcade syle games. I am currently working on a retro RPG in Java.
+                    In my free time i develop fun and silly arcade syle games. I am currently working on a retro RPG in Java and JavaFX.
                 </p>
             </div>
         </div>
@@ -173,20 +173,20 @@ $('#gform').on('submit', function(e) {
     //$('#modal-box').close();
     $('.alert').fadeIn();
 });
-$('#snip').on('click', function(){
-    var accr = $('.my_accordion');
-    var j;
-    for (j = 0; j < accr.length; j++) {
-        accr[j].classList.toggle("active");
-        var panel = accr[j].nextElementSibling;
-        if (panel.style.maxHeight){
-          panel.style.maxHeight = null;
-        } else {
-          panel.style.maxHeight = panel.scrollHeight + "px";
-        }
-      
+
+var accr = $('.my_accordion');
+var j;
+for (j = 0; j < accr.length; j++) {
+    accr[j].classList.toggle("active");
+    var panel = accr[j].nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
     }
-});   
+      
+}
+   
 function resize(){
     var heights = window.innerHeight -90;
     document.getElementById("opener").style.height = heights + "px";
